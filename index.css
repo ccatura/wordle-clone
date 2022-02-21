@@ -109,10 +109,14 @@ body {
 .special-key {
     min-width: 67px;
     font-size: .8em;
+    text-align: center;
 }
 
-.material-icons,
-.material-icons-outlined {
+.backspace {
+    padding-top: 18px;
+}
+
+.icon {
     cursor: pointer;
     transform: scale(1.1) translateY(8px);
     margin: 0 5px;
