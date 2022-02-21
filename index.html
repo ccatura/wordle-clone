@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <!-- End Google Fonts -->
 
     <script src="./index.js"></script>
@@ -21,18 +22,18 @@
     
 <div class="main-container">
     <div class="title-bar">
-        <div class="material-icons">menu</div>
-        <div class="material-icons">help</div>
-        <div>Wordle</div>
-        <div class="material-icons">settings</div>
+        <div class="material-icons-outlined">menu</div>
+        <div class="material-icons">help_outline</div>
+        <div class="main-title">Wordle</div>
+        <div class="material-icons-outlined">leaderboard</div>
         <div class="material-icons">settings</div>
     </div>
     <div class="word-area">
-        <div class="letter-single"></div>
-        <div class="letter-single"></div>
-        <div class="letter-single"></div>
-        <div class="letter-single"></div>
-        <div class="letter-single"></div>
+        <div class="letter-single color-correct-space uncovered">c</div>
+        <div class="letter-single color-wrong-space uncovered">h</div>
+        <div class="letter-single color-wrong-letter uncovered">u</div>
+        <div class="letter-single color-wrong-letter uncovered">c</div>
+        <div class="letter-single color-correct-space uncovered">k</div>
         <div class="letter-single"></div>
         <div class="letter-single"></div>
         <div class="letter-single"></div>
@@ -68,27 +69,29 @@
             <div class="key">r</div>
             <div class="key">t</div>
             <div class="key">y</div>
-            <div class="key">u</div>
+            <div class="key color-wrong-letter uncovered">u</div>
             <div class="key">i</div>
             <div class="key">o</div>
             <div class="key">p</div>
         </div>
         <div class="row">
+            <div class="key-space"> </div>
             <div class="key">a</div>
             <div class="key">s</div>
             <div class="key">d</div>
             <div class="key">f</div>
             <div class="key">g</div>
-            <div class="key">h</div>
+            <div class="key color-correct-space uncovered">h</div>
             <div class="key">j</div>
-            <div class="key">k</div>
+            <div class="key color-correct-space uncovered">k</div>
             <div class="key">l</div>
+            <div class="key-space"> </div>
         </div>
         <div class="row">
             <div class="key special-key">enter</div>
             <div class="key">z</div>
             <div class="key">x</div>
-            <div class="key">c</div>
+            <div class="key color-correct-space uncovered">c</div>
             <div class="key">v</div>
             <div class="key">b</div>
             <div class="key">n</div>

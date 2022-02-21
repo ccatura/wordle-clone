@@ -6,6 +6,9 @@
 
 :root {
     --letter-size: 60px;
+    --color-correct-space: #6caa66;
+    --color-wrong-space: #c8b55e;
+    --color-wrong-letter: #787c7e;
 }
 
 body {
@@ -33,33 +36,50 @@ body {
 }
 
 .letter-single {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid lightgray;
     width: var(--letter-size);
     height: var(--letter-size);
     margin: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.9rem;
+    color: white;
+    text-transform: uppercase;
 }
+
 
 .title-bar {
     font-family: 'Ultra', serif;
-    font-stretch: 250%;
     font-size: 2rem;
     border-bottom: 1px solid lightgray;
     height: 50px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    padding: 5px 0 0 0;
+    padding: 5px 10px 0 10px;
+}
+
+.main-title {
+    margin: 0 auto;
 }
 
 .keyboard {
     /* border: 2px solid red; */
     padding: 0 4px 5px 4px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 .row {
     /* border: 2px solid blue; */
     display: flex;
     justify-content: center;
+    width: 510px;
+    margin: 2px 0;
 }
 
 .key {
@@ -76,26 +96,51 @@ body {
     font-size: .9rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    margin: 3px;
+    margin: 0 3px;
 }
 
 .special-key {
-    width: 70px;
-    min-width: 70px;
+    min-width: 67px;
     font-size: .8em;
 }
 
-.material-icons {
+.material-icons,
+.material-icons-outlined {
     cursor: pointer;
-    transform: scale(1.5) translateY(8px);
+    transform: scale(1.1) translateY(8px);
+    margin: 0 5px;
 }
 
+.color-wrong-space {
+    background-color: var(--color-wrong-space);
+}
+
+.color-correct-space {
+    background-color: var(--color-correct-space);
+}
+
+.color-wrong-letter {
+    background-color: var(--color-wrong-letter);
+}
+
+.uncovered {
+    border: none;
+    color: white;
+}
 
 
 
 
 @media (max-width: 600px) {
     .main-container {
-        height: 95vh;
+        height: 99vh;
+    }
+
+    .row {
+        width: 380px;
+    }
+
+    .special-key {
+        min-width: 51px;
     }
 }
