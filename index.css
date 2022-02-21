@@ -60,6 +60,7 @@ body {
     flex-flow: row nowrap;
     justify-content: space-around;
     padding: 5px 10px 0 10px;
+    position: static;
 }
 
 .main-title {
